@@ -1,0 +1,17 @@
+.mainh1{
+    color:$whitecolor;
+    
+&--firsth1{
+    display: block;
+    letter-spacing: 1rem;
+    font-size: 191%;
+    text-transform: uppercase;
+    @include animations(moveright,1s);
+}
+&--secondh1{
+    display: block;
+    @include animations(moveleft,1s);
+    margin-bottom: 6%;
+    font-size: 100%;
+}
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My Heading</h2>
+
+<p>Play around with the code and click on the "Run" button to view the result.</p>
+
+<p id="demo"></p>
+
+<script>
+response = {
+
+  "id": 1234,
+
+  "name": "Category1",
+
+  "click_commission_rates": [
+
+    {
+
+      "id": 0,
+
+      "affiliate_site_rank": {
+
+        "id": 1,
+
+        "name": "Rank1"
+
+      },
+
+      "affiliate_commission_rate_type": "1Click",
+
+      "affiliate_commission_rate": 20,
+
+      "valid_from": "2020-08-02T10:32:01Z",
+
+      "reservations": [
+
+        {
+
+          "id": 0,
+
+          "affiliate_commission_rate_type": "1Click",
+
+          "affiliate_commission_rate": 40,
+
+          "valid_from": "2020-09-02T10:32:01Z"
+
+        },
+
+        {
+
+          "id": 1,
+
+          "affiliate_commission_rate_type": "No Commission",
+
+          "affiliate_commission_rate": 60,
+
+          "valid_from": "2020-11-02T10:32:01Z"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": 1,
+
+      "affiliate_site_rank": {
+
+        "id": 2,
+
+        "name": "Rank1"
+
+      },
+
+      "affiliate_commission_rate_type": "1Click",
+
+      "affiliate_commission_rate": 50,
+
+      "valid_from": "2020-10-02T10:32:01Z",
+
+      "reservations": [
+
+        {
+
+          "id": 2,
+
+          "affiliate_commission_rate_type": "1Click",
+
+          "affiliate_commission_rate": 70,
+
+          "valid_from": "2020-09-02T10:32:01Z"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": 2,
+
+      "affiliate_site_rank": {
+
+        "id": 3,
+
+        "name": "Rank2"
+
+      },
+
+      "affiliate_commission_rate_type": "1Click",
+
+      "affiliate_commission_rate": 150,
+
+      "valid_from": "2020-10-02T10:32:01Z"
+
+    },
+
+    {
+
+      "id": 3,
+
+      "affiliate_site_rank": {
+
+        "id": 4,
+
+        "name": "Rank1"
+
+      },
+
+      "affiliate_commission_rate_type": "1Click",
+
+      "affiliate_commission_rate": 250,
+
+      "valid_from": "2020-05-02T10:32:01Z",
+
+      "reservations": [
+
+        {
+
+          "id": 3,
+
+          "affiliate_commission_rate_type": "1Click",
+
+          "affiliate_commission_rate": 270,
+
+          "valid_from": "2020-12-02T10:32:01Z"
+
+        },
+
+        {
+
+          "id": 4,
+
+          "affiliate_commission_rate_type": "1Click",
+
+          "affiliate_commission_rate": 1270,
+
+          "valid_from": "2020-14-02T10:32:01Z"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": 4,
+
+      "affiliate_site_rank": {
+
+        "id": 5,
+
+        "name": "Rank1"
+
+      },
+
+      "affiliate_commission_rate_type": "1Click",
+
+      "affiliate_commission_rate": 450,
+
+      "valid_from": "2020-05-02T10:32:01Z"
+
+    }
+  ]
+}
+
+function create_expected(response) {
+    current_commision_rates = response['click_commission_rates']
+    
+    ranks = [];
+    current = {}
+    result = {}
+    current_commision_rates.map((x) => {
+    	ranks.push(x.affiliate_site_rank.id);
+    	current[x.id] = x;
+    
+        reservations = x['reservations'];
+        reservations["currentAsociation"]=x.id;
+        if (reservations) {
+          reservations.map((reservation) => {
+          	  
+              valid_from = reservation['valid_from'];
+              id = reservation['id'];
+              
+              
+              result[valid_from] = reservation;            
+          })
+        }
+    })
+    
+	return {ranks, current, result};
+}
+
+console.log(create_expected(response))
+</script>
+
+</body>
+</html>

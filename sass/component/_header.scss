@@ -1,0 +1,27 @@
+.header{ 
+    background-image: linear-gradient(rgba(165, 75, 75, 0.53),rgba(93, 118, 165, 0.62)), url("../img/hero.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 95vh;
+    clip-path: polygon(0% 0%,100% 0%,100% 75%,0% 100%);
+
+&__maindiv{
+    position :absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   text-align: center;
+}
+&__divlogo
+{
+    height: 32%;
+    padding: 1%;
+    position: absolute;
+
+&--logo{
+    height: 3%;
+    @include animations(moveleft,.5s);
+ 
+}
+}
+}
