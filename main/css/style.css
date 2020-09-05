@@ -10,7 +10,11 @@ body {
   color: white;
   padding: 1%;
   position: relative;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+html {
+  overflow-x: hidden; }
 
 @keyframes moveright {
   0% {
@@ -457,9 +461,52 @@ section.feature > * {
     font-size: 1.59rem; }
   .navigation_ul {
     width: 81% !important;
-    transform: translate(-143%, -95%) !important; }
+    transform: translate(-179%, -95%) !important; }
   .card_details ul li {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .card_details ul {
+    left: 1%;
+    line-height: 2rem; }
+  main {
+    margin-top: 23%; }
+  .feature {
+    margin-top: 17rem; }
+  .tours {
+    margin-top: -2rem; }
+  .h3type {
+    font-size: 1rem; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 5%; }
+  .para {
+    font-size: 1.5rem; }
+  .row {
+    margin-left: 6rem; }
+  .nav a {
+    font-size: 2rem !important; }
+  .navigation_btn {
+    left: 82% !important;
+    width: 13% !important; }
+  .navigation_background {
+    left: 82% !important;
+    width: 13% !important; }
+  .image_1 {
+    width: 15rem;
+    left: 0 !important;
+    top: 0 !important;
+    position: relative !important;
+    display: block; }
+  .image_2 {
+    display: block;
+    width: 15rem;
+    top: -4rem !important;
+    position: relative !important;
+    left: 0 !important; }
+  .image_3 {
+    display: block;
+    width: 15rem;
+    left: 0 !important;
+    top: -8rem !important;
+    position: relative !important; } }
 
 @media (max-width: 600px) {
   .test1 {
@@ -474,9 +521,52 @@ section.feature > * {
     font-size: 1.59rem; }
   .navigation_ul {
     width: 81% !important;
-    transform: translate(-143%, -95%) !important; }
+    transform: translate(-179%, -95%) !important; }
   .card_details ul li {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .card_details ul {
+    left: 1%;
+    line-height: 2rem; }
+  main {
+    margin-top: 23%; }
+  .feature {
+    margin-top: 17rem; }
+  .tours {
+    margin-top: -2rem; }
+  .h3type {
+    font-size: 1rem; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 5%; }
+  .para {
+    font-size: 1.5rem; }
+  .row {
+    margin-left: 6rem; }
+  .nav a {
+    font-size: 2rem !important; }
+  .navigation_btn {
+    left: 82% !important;
+    width: 13% !important; }
+  .navigation_background {
+    left: 82% !important;
+    width: 13% !important; }
+  .image_1 {
+    width: 15rem;
+    left: 0 !important;
+    top: 0 !important;
+    position: relative !important;
+    display: block; }
+  .image_2 {
+    display: block;
+    width: 15rem;
+    top: -4rem !important;
+    position: relative !important;
+    left: 0 !important; }
+  .image_3 {
+    display: block;
+    width: 15rem;
+    left: 0 !important;
+    top: -8rem !important;
+    position: relative !important; } }
 
 @media (max-width: 600px) {
   .test1 {
@@ -491,9 +581,52 @@ section.feature > * {
     font-size: 1.59rem; }
   .navigation_ul {
     width: 81% !important;
-    transform: translate(-143%, -95%) !important; }
+    transform: translate(-179%, -95%) !important; }
   .card_details ul li {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .card_details ul {
+    left: 1%;
+    line-height: 2rem; }
+  main {
+    margin-top: 23%; }
+  .feature {
+    margin-top: 17rem; }
+  .tours {
+    margin-top: -2rem; }
+  .h3type {
+    font-size: 1rem; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 5%; }
+  .para {
+    font-size: 1.5rem; }
+  .row {
+    margin-left: 6rem; }
+  .nav a {
+    font-size: 2rem !important; }
+  .navigation_btn {
+    left: 82% !important;
+    width: 13% !important; }
+  .navigation_background {
+    left: 82% !important;
+    width: 13% !important; }
+  .image_1 {
+    width: 15rem;
+    left: 0 !important;
+    top: 0 !important;
+    position: relative !important;
+    display: block; }
+  .image_2 {
+    display: block;
+    width: 15rem;
+    top: -4rem !important;
+    position: relative !important;
+    left: 0 !important; }
+  .image_3 {
+    display: block;
+    width: 15rem;
+    left: 0 !important;
+    top: -8rem !important;
+    position: relative !important; } }
 
 .navigation_checkbox {
   width: 64%;
