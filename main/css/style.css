@@ -456,9 +456,11 @@ section.feature > * {
   html {
     font-size: 54.5%; }
   .card_heading {
-    font-size: 1rem; }
+    font-size: .4rem; }
   .price {
-    font-size: 1.59rem; }
+    font-size: 1.59rem;
+    line-height: 2rem;
+    left: 1rem; }
   .navigation_ul {
     width: 81% !important;
     transform: translate(-179%, -95%) !important; }
@@ -480,9 +482,12 @@ section.feature > * {
   .para {
     font-size: 1.5rem; }
   .row {
-    margin-left: 6rem; }
+    margin-left: 3rem; }
   .nav a {
     font-size: 2rem !important; }
+  .btn-book {
+    left: 16%;
+    font-size: 1rem; }
   .navigation_btn {
     left: 82% !important;
     width: 13% !important; }
@@ -516,9 +521,11 @@ section.feature > * {
   html {
     font-size: 54.5%; }
   .card_heading {
-    font-size: 1rem; }
+    font-size: .4rem; }
   .price {
-    font-size: 1.59rem; }
+    font-size: 1.59rem;
+    line-height: 2rem;
+    left: 1rem; }
   .navigation_ul {
     width: 81% !important;
     transform: translate(-179%, -95%) !important; }
@@ -540,9 +547,12 @@ section.feature > * {
   .para {
     font-size: 1.5rem; }
   .row {
-    margin-left: 6rem; }
+    margin-left: 3rem; }
   .nav a {
     font-size: 2rem !important; }
+  .btn-book {
+    left: 16%;
+    font-size: 1rem; }
   .navigation_btn {
     left: 82% !important;
     width: 13% !important; }
@@ -576,9 +586,11 @@ section.feature > * {
   html {
     font-size: 54.5%; }
   .card_heading {
-    font-size: 1rem; }
+    font-size: .4rem; }
   .price {
-    font-size: 1.59rem; }
+    font-size: 1.59rem;
+    line-height: 2rem;
+    left: 1rem; }
   .navigation_ul {
     width: 81% !important;
     transform: translate(-179%, -95%) !important; }
@@ -600,9 +612,12 @@ section.feature > * {
   .para {
     font-size: 1.5rem; }
   .row {
-    margin-left: 6rem; }
+    margin-left: 3rem; }
   .nav a {
     font-size: 2rem !important; }
+  .btn-book {
+    left: 16%;
+    font-size: 1rem; }
   .navigation_btn {
     left: 82% !important;
     width: 13% !important; }
