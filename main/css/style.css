@@ -698,7 +698,7 @@ nav {
   position: fixed;
   left: 50rem;
   top: 50rem;
-  z-index: 1;
+  z-index: 5;
   transform: translate(-13rem, -5rem);
   opacity: 0;
   width: 0; }
