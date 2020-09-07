@@ -61,6 +61,10 @@ html {
       animation-name: moveleft;
       animation-duration: 0.5s; }
 
+@media (min-resolution: 192dpi) and (max-width: 600px) {
+  .header {
+    background-image: linear-gradient(rgba(165, 75, 75, 0.53), rgba(93, 118, 165, 0.62)), url("../img/hero-small.jpg"); } }
+
 .btnanchor:link, .btnanchor:visited {
   text-decoration: none;
   color: #42a787;
