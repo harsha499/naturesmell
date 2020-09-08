@@ -714,6 +714,79 @@ section.feature > * {
   text-decoration: none;
   color: black; }
 
+@media (max-width: 1200px) {
+  .popup_right {
+    width: 79%;
+    padding: 0 2rem 0 2rem; }
+  .popup_left {
+    display: none; }
+  .popup {
+    width: 48%;
+    left: 30%;
+    height: 30.7rem; }
+  .popup_button {
+    bottom: 1rem; } }
+
+@media (max-width: 900px) {
+  .popup_right {
+    width: 79%;
+    padding: 0 2rem 0 2rem; }
+  .popup_left {
+    display: none; }
+  .popup {
+    width: 39%;
+    left: 30%; }
+  .popup_button {
+    bottom: 1rem; } }
+
+@media (max-width: 900px) {
+  .popup_right {
+    width: 79%;
+    padding: 0 2rem 0 2rem; }
+  .popup_left {
+    display: none; }
+  .popup {
+    width: 39%;
+    left: 30%; }
+  .popup_button {
+    bottom: 1rem; } }
+
+@media (max-width: 600px) {
+  .popup_right {
+    width: 79%;
+    padding: 0 2rem 0 2rem; }
+  .popup_left {
+    display: none; }
+  .popup {
+    width: 89%;
+    left: 7%; }
+  .popup_button {
+    bottom: 1rem; } }
+
+@media (max-width: 600px) {
+  .popup_right {
+    width: 79%;
+    padding: 0 2rem 0 2rem; }
+  .popup_left {
+    display: none; }
+  .popup {
+    width: 89%;
+    left: 7%; }
+  .popup_button {
+    bottom: 1rem; } }
+
+@media (max-width: 600px) {
+  .popup_right {
+    width: 79%;
+    padding: 0 2rem 0 2rem; }
+  .popup_left {
+    display: none; }
+  .popup {
+    width: 89%;
+    left: 7%; }
+  .popup_button {
+    bottom: 1rem; } }
+
 .navigation_checkbox {
   width: 64%;
   position: fixed;
