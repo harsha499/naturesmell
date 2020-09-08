@@ -691,6 +691,29 @@ section.feature > * {
     column-rule-color: green;
     hyphens: auto; }
 
+.mainpoup {
+  position: absolute;
+  background-color: #00000061;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 99%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .mainpoup:target {
+    opacity: 1;
+    visibility: visible; }
+
+.close {
+  font-size: 4rem;
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  text-decoration: none;
+  color: black; }
+
 .navigation_checkbox {
   width: 64%;
   position: fixed;

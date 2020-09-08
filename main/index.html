@@ -14,8 +14,10 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div id="popup" class="mainpoup">
         <div class="popup">
             <div class="popup_box">
+                <a href="#tours" class="close">&times;</a>
                 <div class="popup_left">
                     <img src="img/nat-8.jpg" class="popup_img">
                     <img src="img/nat-9.jpg" class="popup_img">
@@ -30,6 +32,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <div class="navigation">
             <input type="checkbox" id="chck" class="navigation_checkbox"/>
             <label for="chck" class="navigation_btn"></label>
@@ -52,7 +55,7 @@
                <span class="mainh1--secondh1">is where life happens</span>
            </h1>
            <div>
-           <a class="btnanchor" href="#" >Browse</a>
+           <a class="btnanchor" href="#tours" >Browse</a>
         </div>
        </div>
       </header>
@@ -122,7 +125,7 @@
               </div>
           </div>
       </section>
-      <section class="tours">
+      <section id="tours" class="tours">
           <div class="popular">
               <h3>most popular tours</h3>
           </div>
@@ -148,7 +151,7 @@
               </div>
               <div class="card_top card_top_back">
                   <div class="price">only $297</div>
-                  <div><a href="#" class="btn-book">Book Now !</a></div>
+                  <div><a href="#popup" class="btn-book">Book Now !</a></div>
               </div>
             </div>
           </div>
@@ -173,7 +176,7 @@
                 </div>
                 <div class="card_top card_top_back">
                     <div class="price">only $597</div>
-                    <div><a href="#" class="btn-book">Book Now !</a></div>
+                    <div><a href="#popup" class="btn-book">Book Now !</a></div>
                 </div>
               </div>
             </div>
@@ -198,7 +201,7 @@
                             </div>
                             <div class="card_top card_top_back">
                                 <div class="price">only $897</div>
-                                <div><a href="#" class="btn-book">Book Now !</a></div>
+                                <div><a href="#popup" class="btn-book">Book Now !</a></div>
                             </div>
                           </div>
                 </div>
